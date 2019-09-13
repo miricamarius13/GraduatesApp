@@ -3,7 +3,7 @@
 
     <groupId>org.javasamples.apps</groupId>
     <artifactId>java-simple-web-page</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <packaging>war</packaging>
     <name>JavaWebapp</name>
@@ -42,7 +42,7 @@
     <scm>
         <connection>scm:git:https://github.com/miricamarius13/GraduatesApp.git</connection>
         <developerConnection>scm:git:https://github.com/miricamarius13/GraduatesApp.git</developerConnection>
-        <tag>java-simple-web-page-1.0.0</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/miricamarius13/GraduatesApp.git</url>
     </scm>
 
