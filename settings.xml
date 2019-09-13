@@ -34,6 +34,9 @@
        <id>nexus-releases</id>
        <username>admin</username>
        <password>admin123</password>
+	   <id>git</id>
+       <username>miricamarius13</username>
+       <password>biancavezicaaintratsalariul</password>
      </server>
   </servers>
 </settings>
