@@ -3,7 +3,7 @@
 
     <groupId>org.javasamples.apps</groupId>
     <artifactId>java-simple-web-page</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <packaging>war</packaging>
     <name>JavaWebapp</name>
@@ -42,12 +42,39 @@
     <scm>
         <connection>scm:git:https://github.com/miricamarius13/GraduatesApp.git</connection>
         <developerConnection>scm:git:https://github.com/miricamarius13/GraduatesApp.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>'</tag>
         <url>https://github.com/miricamarius13/GraduatesApp.git</url>
     </scm>
 
     <build>
         <plugins>
+            <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <id>buildnumber</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <format>{0,number}</format>
+                    <items>
+                        <item>buildNumber</item>
+                    </items>
+                    <doCheck>false</doCheck>
+                    <doUpdate>false</doUpdate>
+                    <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>
+                    <properties>
+                        <major.minor.version>1.0</major.minor.version>
+                    </properties>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -59,6 +86,6 @@
                 <version>2.5.3</version>
             </plugin>
         </plugins>
-	<finalName>${project.artifactId}-${project.version}</finalName>
+	<finalName>${releasedVersion.majorVersion}.${releasedVersion.minorVersion}.{releasedVersion.version}</finalName>
     </build>
 </project>
