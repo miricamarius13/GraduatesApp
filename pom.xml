@@ -3,7 +3,7 @@
 
     <groupId>org.javasamples.apps</groupId>
     <artifactId>java-simple-web-page</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
 
     <packaging>war</packaging>
     <name>JavaWebapp</name>
