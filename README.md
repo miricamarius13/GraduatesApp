@@ -1,1 +1,7 @@
-<h1><b>Doduo Project</b></h1>
+# Graduates project
+
+Ansensible team
+
+```bash
+( ͡° ͜ʖ ͡°)
+```
