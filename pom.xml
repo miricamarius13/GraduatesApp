@@ -59,6 +59,6 @@
                 <version>2.5.3</version>
             </plugin>
         </plugins>
-        <finalName>${releasedVersion.majorVersion}.${releasedVersion.minorVersion}.{releasedVersion.version}</finalName>
+	<finalName>${project.artifactId}-${project.version}</finalName>
     </build>
 </project>
